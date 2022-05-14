@@ -4,51 +4,57 @@
 <title>Electro Grid</title>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
 
+h1 {
+  color: blue;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+</style>
 </head>
 <body>
 
 <h1>Payment Management</h1>
-<p>This is a paragraph.</p>
 <center><h1>ADD PAYMENT DETAILS</h1></center><div className="card-body">
     <div className="container">
         <div className="form-group">
-            <div className="form-group" style={{marginBottom:'15px'}}>
-            <label style={{marginBottom:'5px'}}>Payment ID</label>
+            <div className="form-group">
+            <label>Payment ID</label>
             <input type="text" className="form-control" name="paid" placeholder="paid" required/>
           </div>
 
-        <div className="form-group" style={{marginBottom:'15px'}}>
-        <label style={{marginBottom:'5px'}}>CVV Number</label>
-        <input type="text"
-         className="form-control" name="cvv" placeholder="cvv"
+        <div className="form-group">
+        <label>CVV Number</label>
+        <input type="text" className="form-control" name="cvv" placeholder="cvv" required/>
         </div>
 
-        <div className="form-group" style={{marginBottom:'15px'}}>
-         <label style={{marginBottom:'5px'}}>Name</label>
+        <div className="form-group">
+         <label>Name</label>
          <input type="text"
-        className="form-control"
-        name="name"
-        placeholder="name"
+        className="form-control" name="name" placeholder="name" required/>
         </div>
 
-        <div className="form-group" style={{marginBottom:'15px'}}>
-        <label style={{marginBottom:'5px'}}>Date</label>
-        <input type="text"
-        className="form-control"
-        name="date"
-        placeholder="date"
+        <div className="form-group">
+        <label>Date</label>
+        <input type="text"className="form-control"name="date"placeholder="date" required/>
         </div>
 
-         <div className="form-group" style={{marginBottom:'15px'}}>
-         <label style={{marginBottom:'5px'}}> Amount</label>
-         <input type="text"
-          className="form-control"
-          name="amount"
-         placeholder="amount"
+         <div className="form-group">
+         <label> Amount</label>
+         <input type="text" className="form-control" name="amount" placeholder="amount" required/>
         </div>
 
        <br>
+
 
         <button className="btn btn-success" type= "submit" style={{mardinTop:'15px'}} onClick={this.onSubmit}>
         &nbsp;ENTER
